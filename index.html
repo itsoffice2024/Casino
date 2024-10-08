@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>Bet: <i id="bet">1</i></span>
+        <span id="el-win" style="display: none;">Win: +<i id="win">0</i></span>
+        <span id="el-money" class="col-red">Money $: <i id="money">0</i></span>
+        <button id="btn-putmoney">Put Money 💵</button>
+    </header>
+    <main>
+        <section class="s-game">
+            <div class="c-game">
+                <div id="game-area">
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                    <div class="c-column">
+                        <div class="column"></div>
+                    </div>
+                </div>
+                <span class="line line-1 left">-1-</span>
+                <span class="line line-1 right">-1-</span>
+                <span class="line line-2 left">-2-</span>
+                <span class="line line-2 right">-2-</span>
+                <span class="line line-3 left">-3-</span>
+                <span class="line line-3 right">-3-</span>
+            </div>
+        </section>
+        <section class="s-btns">
+            <div class="c-btn">
+                <button id="btn-bet">Bet</button>
+            </div>
+            <div class="c-btn">
+                <button id="btn-spin">SPIN</button>
+            </div>
+            <div class="c-btn">
+                <table>
+                    <tr>
+                        <td>Line</td>
+                        <td>3🍎</td>
+                        <td>4🍎</td>
+                        <td>5🍎</td>
+                    </tr>
+                    <tr>
+                        <td style="color: blue;">Line 1</td>
+                        <td>100*bet</td>
+                        <td>1000*bet</td>
+                        <td>100000*bet</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Line 2</td>
+                        <td>2*bet</td>
+                        <td>5*bet</td>
+                        <td>1000*bet</td>
+                    </tr>
+                    <tr>
+                        <td style="color: red;">Line 3</td>
+                        <td>2*bet</td>
+                        <td>5*bet</td>
+                        <td>1000*bet</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
